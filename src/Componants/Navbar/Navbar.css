@@ -1,0 +1,22 @@
+.navbar img {
+    width: 200px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.navbar img:hover {
+    transform: scale(1.03);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 4%;
+    background-color: rgb(225, 225, 225);
+}
+
+@media (max-width: 720px) {
+    .navbar img {
+        width: 100px;
+    }
+}
