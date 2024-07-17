@@ -12,6 +12,10 @@ const Sidebar = () => {
                     <img src={assets.add} alt="" />
                 </div> 
             </NavLink>
+            <NavLink to='/home' className="sidebar-option">
+                <img src={assets.homeIcon} alt="" />
+                <p>Home</p>
+            </NavLink>
             <NavLink to='/dashboard' className="sidebar-option">
                 <img src={assets.dashboard} alt="" />
                 <p>Dashboard</p>
@@ -31,9 +35,6 @@ const Sidebar = () => {
         </div>
         <div className="animation">
             <img src={assets.deadlineAnimation} alt="" />
-        </div>
-        <div className="detail-display">
-            
         </div>
     </div>
   )

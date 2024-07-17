@@ -2,7 +2,7 @@
     width: 28%;
     min-height: 100vh;
     border: none;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 2px 60px 1px 1px;
     padding: 15px 4%;
     justify-content: left;
@@ -11,7 +11,7 @@
 .sidebar-options {
     display: flex;
     flex-direction: column;
-    padding: 20px 10px;
+    padding: 10px 10px;
     gap: 30px;
     
 }
