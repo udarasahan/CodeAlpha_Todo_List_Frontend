@@ -124,4 +124,7 @@
     .detail-display {
         font-size: 12px;
     }
+    .details-display {
+        margin-left: 10px;
+    }
 }
