@@ -75,6 +75,7 @@
     border: none;
     border-radius: 15px;
     font-size: 20px;
+    font-weight: 500;
 }
 
 @media (max-width: 1190px) {
@@ -112,6 +113,9 @@
     .details-display {
         padding: 10px;
     }
+    .date-and-time-display {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 570px) {
@@ -125,6 +129,6 @@
         font-size: 12px;
     }
     .details-display {
-        margin-left: 10px;
+        margin-left: 15px;
     }
 }

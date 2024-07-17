@@ -1,35 +1,43 @@
 .sidebar {
-    width: 28%;
-    min-height: 100vh;
-    border: none;
-    margin-top: 10px;
-    border-radius: 2px 60px 1px 1px;
-    padding: 15px 4%;
-    justify-content: left;
+    max-width: 28%;
+    
 }
 
-.sidebar-options {
+.nav-menu {
+    min-height: 100vh;
+    border: none;
+    justify-content: left;
+    background-color: rgba(243, 159, 138, 0.374);
+    margin-top: 10px;
+    border-radius: 2px 60px 1px 1px;
+    padding: 15px 2%;
+    margin-right: 20px;
+}
+
+.sidebar-options .menu-items {
     display: flex;
     flex-direction: column;
-    padding: 10px 10px;
-    gap: 30px;
-    
+    padding: 10px 20px;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .sidebar-option {
     display: flex;
     align-items: center;
     gap: 15px;
-    border: 1px solid #a9a9a9;
     padding: 8px 10px;
     border-radius: 3px 0px 0px 3px;
     text-decoration: none;
     font-size: 20px;
     color: black;
-    border: none;
-    padding: 10px 15px;
-    margin-left: -20px;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.sidebar-option.active {
+    background-color: rgb(251, 165, 134);
+    border-radius: 20px;
 }
 
 .sidebar-option img {
@@ -39,7 +47,7 @@
 
 .add-task-button {
     background-color: #d12456;
-    padding: 10px 20px;
+    padding: 15px 20px;
     display: flex;
     flex-direction: row;
     gap: 5px;
@@ -47,6 +55,8 @@
     align-items: center;
     border-radius: 8px;
     transition: 0.5s;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .sidebar-option:hover {
@@ -62,13 +72,29 @@
     max-width: 180px;
     justify-content: center;
     transition: 0.8s;
+    border-radius: 50%;
+    margin-top: 20px;
 }
 
 .animation img:hover {
     transform: scale(1.05);
 }
 
-@media (max-width:885px) {
+.nav-mob-close {
+    display: none;
+}
+
+.nav-mob-open {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .add-task-button {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 885px) {
     .sidebar-option {
         font-size: 15px;
     }
@@ -89,7 +115,37 @@
 }
 
 @media (max-width: 720px) {
-    .sidebar {
+    .nav-menu {
         display: none;
+    }
+    .nav-mob-open {
+        display: block;
+        position: fixed;
+        left: 10px;
+        top: 65px;
+        width: 30px;
+        cursor: pointer;
+        z-index: 3;
+    }
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -350px;
+        width: 350px;
+        height: 100%;
+        background-color: #d2c0ca;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        z-index: 2;
+        transition: left 0.5s ease-in-out;
+        padding-top: 20px;
+    }
+    .nav-mob-close {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: 20px;
     }
 }

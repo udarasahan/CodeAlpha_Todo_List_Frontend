@@ -10,6 +10,7 @@ import Upcoming from './Pages/Upcoming/Upcoming';
 import Calender from './Pages/Calendar/Calender';
 import Dashboard from './Pages/Dashboard/Dashboard'
 import Home from './Pages/Home/Home';
+import Footer from './Componants/Footer/Footer';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <Route path='/calendar' element={<Calender url={url} />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   )
 }

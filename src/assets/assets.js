@@ -7,7 +7,9 @@ import calendar from './calendar.png';
 import deadlineAnimation from './deadline.gif';
 import runningBoy from './busy.gif';
 import menuIcon from './menu.png';
-import homeIcon from './home.png'
+import homeIcon from './home.png';
+import notificationIcon from './bell.png';
+import closeIcon from './cross-icon.png';
 
 
 export const assets = {
@@ -21,5 +23,7 @@ export const assets = {
     runningBoy,
     menuIcon,
     homeIcon,
+    notificationIcon,
+    closeIcon,
     
 }
