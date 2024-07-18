@@ -20,7 +20,7 @@ const Sidebar = () => {
             <div ref={menuRef} className='nav-menu'>
                 <img src={assets.closeIcon} onClick={closeMenu} className='nav-mob-close' alt="Close Menu" />
                 <div className="sidebar-options">
-                    <NavLink to='/add' className="sidebar-option">
+                    <NavLink to='/add' className="sidebar-option" onClick={closeMenu}>
                         <div className='add-task-button'>
                             <p>Add Task</p>
                             <img src={assets.add} alt="Add" />
