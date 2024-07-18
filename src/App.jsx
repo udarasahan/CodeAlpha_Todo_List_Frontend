@@ -23,6 +23,7 @@ function App() {
       <div className="app-content">
         <Sidebar />
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path='/home' element={<Home url={url} />} />
           <Route path='/dashboard' element={<Dashboard url={url} />} />
           <Route path='/add' element={<Add url={url} />} />
