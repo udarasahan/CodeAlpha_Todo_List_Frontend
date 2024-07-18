@@ -3,7 +3,6 @@ import Navbar from './Componants/Navbar/Navbar';
 import { ToastContainer } from 'react-toastify';
 import Sidebar from './Componants/Sidebar/Sidebar';
 import { Route, Routes } from 'react-router-dom';
-//import Calendar from 'react-calendar';
 import Add from './Pages/Add/Add';
 import Today from './Pages/Today/Today';
 import Upcoming from './Pages/Upcoming/Upcoming';

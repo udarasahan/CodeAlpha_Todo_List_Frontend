@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Home.css';
 import { assets } from '../../assets/assets';
-import { Box } from '@mui/material';
+import DetailsDisplay from '../../Componants/Details-Display/DetailsDisplay';
 
 
 const Home = () => {
@@ -28,24 +28,7 @@ const Home = () => {
             <img src={assets.runningBoy} alt="" />
             <p>Enchantment and Comfort for Your Busy Days...!</p>
         </div>
-        <div className="details-display">
-            <Box className="detail-display" sx={{backgroundColor: '#F7F944'}}>
-                <p>Tasks Completed</p>
-                <p>8</p>
-            </Box>
-            <Box className="detail-display" sx={{backgroundColor: '#C467C8'}}>
-                <p>Pending Tasks</p>
-                <p>4</p>
-            </Box>
-            <Box className="detail-display" sx={{backgroundColor: '#DF2DAA'}}>
-                <p>Total Tasks</p>
-                <p>12</p>
-            </Box>
-            <Box className="detail-display" sx={{backgroundColor: '#7E4FEA'}}>
-                <p>Productivity Score</p>
-                <p>66.6%</p>
-            </Box>
-        </div>
+        <DetailsDisplay />
     </div>
   )
 }

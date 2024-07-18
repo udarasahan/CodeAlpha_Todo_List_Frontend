@@ -1,8 +1,12 @@
+import DetailsDisplay from '../../Componants/Details-Display/DetailsDisplay';
 import './Dashboard.css';
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <div className='dashboard'>
+      <h1>Dashboard</h1>
+      <DetailsDisplay />
+    </div>
   )
 }
 

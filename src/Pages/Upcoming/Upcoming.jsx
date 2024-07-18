@@ -2,7 +2,9 @@ import './Upcoming.css';
 
 const Upcoming = () => {
   return (
-    <div>Upcoming</div>
+    <div className='upcoming'>
+      <h1>Upcoming tasks</h1>
+    </div>
   )
 }
 
