@@ -130,8 +130,8 @@
     .nav-menu {
         position: fixed;
         top: 0;
-        right: -350px;
-        width: 350px;
+        left: -250px;
+        width: 250px;
         height: 100%;
         background-color: #d2c0ca;
         display: flex;
@@ -139,7 +139,6 @@
         gap: 30px;
         z-index: 2;
         transition: left 0.5s ease-in-out;
-        padding-top: 20px;
     }
     .nav-mob-close {
         display: block;
@@ -147,5 +146,8 @@
         cursor: pointer;
         margin-left: auto;
         margin-right: 20px;
+    }
+    .animation img {
+        margin-left: 20px;
     }
 }

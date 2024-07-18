@@ -11,7 +11,7 @@ const Sidebar = () => {
     };
 
     const closeMenu = () => {
-        menuRef.current.style.left = "-350px";
+        menuRef.current.style.left = "-250px";
     };
 
     return (
