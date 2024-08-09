@@ -3,6 +3,7 @@ import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+
   return (
     <NavLink to='/home' className="navbar">
         <div className="logo">
@@ -10,7 +11,7 @@ const Navbar = () => {
         </div>
         <div className="notifications-section">
           <p className='notifications-count'></p>
-          <img src={assets.notificationIcon} alt="" />  
+          <img src={assets.notificationIcon} alt="" />
         </div>    
     </NavLink>   
   )
